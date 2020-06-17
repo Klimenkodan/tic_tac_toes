@@ -7,10 +7,11 @@
 #include <string>
 #include <tuple>
 #include <map>
+#include <vector>
 
 class PlayGround {
 	int size = 3;
-	int play_ground[3][3] = {{'_', '_', '_'}, {'_', '_', '_'}, {'_', '_', '_'}};
+	char play_ground[3][3] = {{'_', '_', '_'}, {'_', '_', '_'}, {'_', '_', '_'}};
 	int winner = 0;
 
 	char player_signs[2] = {'X', 'O'};
@@ -40,12 +41,9 @@ public:
 	int get_winner() const;
 
 
+	bool check_draw() const;
 
-
-
-
-
-
+	std::vector<std::tuple<int, int>> get_empty_cells() const;
 };
 
 

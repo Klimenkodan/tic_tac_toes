@@ -1,4 +1,5 @@
 #include <iostream>
+#include "game_logic/Game.h"
 
 //Напишіть гру хрестики-нулики або аналогічну.
 //Вимога: гра повинна дозволяти за кожну із сторін грати людині та, мінімум, двом видам АІ.
@@ -9,6 +10,6 @@
 
 
 int main() {
-	std::cout << "Hello, World!" << std::endl;
+	auto game = Game();
 	return 0;
 }
